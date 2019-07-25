@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <servlet>
+        <servlet-name>loginServlet</servlet-name>
+        <servlet-class>fersa_web.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>loginServlet</servlet-name>
+        <url-pattern>/loginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>logoutServlet</servlet-name>
+        <servlet-class>fersa_web.servlet.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>logoutServlet</servlet-name>
+        <url-pattern>/logoutServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>visitsListServlet</servlet-name>
+        <servlet-class>fersa_web.servlet.VisitsListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>visitsListServlet</servlet-name>
+        <url-pattern>/visitsListServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>deleteVisitServlet</servlet-name>
+        <servlet-class>fersa_web.servlet.DeleteVisitServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteVisitServlet</servlet-name>
+        <url-pattern>/deleteVisitServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>modifyVisitServlet</servlet-name>
+        <servlet-class>fersa_web.servlet.ModifyVisitServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>modifyVisitServlet</servlet-name>
+        <url-pattern>/modifyVisitServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>maintenanceListServlet</servlet-name>
+        <servlet-class>fersa_web.servlet.MaintenanceServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>maintenanceListServlet</servlet-name>
+        <url-pattern>/maintenanceListServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>manageMaintenanceReqServlet</servlet-name>
+        <servlet-class>fersa_web.servlet.ManageMaintenanceReqServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>manageMaintenanceReqServlet</servlet-name>
+        <url-pattern>/manageMaintenanceReqServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>
